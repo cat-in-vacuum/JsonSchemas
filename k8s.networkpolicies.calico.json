@@ -24,7 +24,12 @@
             "type": "object",
             "properties": {
                 "selector": { "type": "string" },
-                "policyTypes": { "type": "array" },
+                "policyTypes": { 
+                    "type": "array", 
+                    "items": {
+                        "type": "string",
+                        "enum": ["Ingress", "Egress"]
+                    },
                 "ingress": {"type": "array"}
             }
         }
