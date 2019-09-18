@@ -9,6 +9,24 @@
             "description": "apiVersion: crd.projectcalico.org/v1",
             "type": "string",
             "enum": [ "crd.projectcalico.org/v1" ]
+        },
+        "kind": {
+            "type": "string",
+            "enum": [ "NetworkPolicy" ]
+        },
+        "metadata": {
+            "type": "object",
+            "properties": {
+                "name": { "type": "string" }
+            }
+        },
+        "spec": {
+            "type": "object",
+            "properties": {
+                "selector": { "type": "string" },
+                "policyTypes": { "type": "array" },
+                "ingress": {"type": "array"}
+            }
         }
     }
 }
