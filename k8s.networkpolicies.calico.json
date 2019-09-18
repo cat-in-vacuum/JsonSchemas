@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://boushy.com/schemas/networkpolicies.calico.k8s.json",
+    "title": "Kubernetes Calico NetworkPolicies",
+    "description": "NetworkPolicies built for Calico networking in Kubernetes",
+    "type": "object",
+    "properties": {
+        "apiVersion": {
+            "description": "apiVersion: crd.projectcalico.org/v1",
+            "type": "string"
+        }
+    }
+}
