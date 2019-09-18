@@ -24,14 +24,34 @@
             "type": "object",
             "properties": {
                 "selector": { "type": "string" },
-                "policyTypes": { 
-                    "type": "array", 
-                    "items": {
-                        "type": "string",
-                        "enum": [ "Ingress", "Egress" ]
-                    }
-                },
-                "ingress": { "type": "array" }
+                "policyTypes": { "$ref": "#/definitions/policyTypes" },
+                "ingress": { "$ref": "#/definitions/ingress_egress" }
+            }
+        }
+    },
+    "definitions": {
+        "policyTypes": { 
+            "type": "array", 
+            "items": {
+                "type": "string",
+                "enum": [ "Ingress", "Egress" ]
+            }
+        },
+        "ingress_egress": { 
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "action": { "type": "string" },
+                    "protocol": { "type": "string" },
+                    "source": { "$ref": "#/definitions/source" }
+                }
+            }
+        },
+        "source": {
+            "type": "object",
+            "properties": {
+                "selector": { "type": "string" }
             }
         }
     }
