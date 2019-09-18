@@ -28,9 +28,10 @@
                     "type": "array", 
                     "items": {
                         "type": "string",
-                        "enum": ["Ingress", "Egress"]
-                    },
-                "ingress": {"type": "array"}
+                        "enum": [ "Ingress", "Egress" ]
+                    }
+                },
+                "ingress": { "type": "array" }
             }
         }
     }
