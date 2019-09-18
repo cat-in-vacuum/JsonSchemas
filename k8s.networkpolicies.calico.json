@@ -25,7 +25,8 @@
             "properties": {
                 "selector": { "type": "string" },
                 "policyTypes": { "$ref": "#/definitions/policyTypes" },
-                "ingress": { "$ref": "#/definitions/ingress_egress" }
+                "ingress": { "$ref": "#/definitions/ingress_egress" },
+                "egress": { "$ref": "#/definitions/ingress_egress" }
             }
         }
     },
