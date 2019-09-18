@@ -43,8 +43,8 @@
             "items": {
                 "type": "object",
                 "properties": {
-                    "action": { "type": "string" },
-                    "protocol": { "type": "string" },
+                    "action": { "type": "string", "enum": [ "allow", "deny", "log" ] },
+                    "protocol": { "type": "string", "enum": [ "TCP", "UDP" ] },
                     "source": { "$ref": "#/definitions/source" }
                 }
             }
