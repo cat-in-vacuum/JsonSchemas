@@ -45,14 +45,18 @@
                 "properties": {
                     "action": { "type": "string", "enum": [ "allow", "deny", "log" ] },
                     "protocol": { "type": "string", "enum": [ "TCP", "UDP" ] },
-                    "source": { "$ref": "#/definitions/source" }
+                    "source": { "$ref": "#/definitions/source_destination" },
+                    "destination": { "$ref": "#/definitions/source_destination" }
                 }
             }
         },
-        "source": {
+        "source_destination": {
             "type": "object",
             "properties": {
-                "selector": { "type": "string" }
+                "selector": { "type": "string" },
+                "namespaceSelector": { "type": "string" },
+                "nets":  { "type": "array" },
+                "ports": { "type": "array" }
             }
         }
     }
