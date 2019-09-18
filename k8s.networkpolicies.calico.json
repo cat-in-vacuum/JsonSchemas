@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://boushy.com/schemas/networkpolicies.calico.k8s.json",
+    "$id": "https://raw.githubusercontent.com/prbsparx/JsonSchemas/master/k8s.networkpolicies.calico.json",
     "title": "Kubernetes Calico NetworkPolicies",
     "description": "NetworkPolicies built for Calico networking in Kubernetes",
     "type": "object",
