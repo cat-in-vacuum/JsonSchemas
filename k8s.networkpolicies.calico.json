@@ -24,7 +24,7 @@
             "type": "object",
             "properties": {
                 "selector": { "type": "string" },
-                "policyTypes": { "$ref": "#/definitions/policyTypes" },
+                "types": { "$ref": "#/definitions/policyTypes" },
                 "ingress": { "$ref": "#/definitions/ingress_egress" },
                 "egress": { "$ref": "#/definitions/ingress_egress" }
             }
@@ -35,7 +35,7 @@
             "type": "array", 
             "items": {
                 "type": "string",
-                "enum": [ "Ingress", "Egress" ]
+                "enum": [ "ingress", "egress" ]
             }
         },
         "ingress_egress": { 
