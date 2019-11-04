@@ -6,9 +6,9 @@
     "type": "object",
     "properties": {
         "apiVersion": {
-            "description": "apiVersion: crd.projectcalico.org/v1",
+            "description": "apiVersion: projectcalico.org/v3",
             "type": "string",
-            "enum": [ "crd.projectcalico.org/v1" ]
+            "enum": [ "projectcalico.org/v3" ]
         },
         "kind": {
             "type": "string",
