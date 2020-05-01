@@ -35,7 +35,7 @@
             "type": "array", 
             "items": {
                 "type": "string",
-                "enum": [ "ingress", "egress" ]
+                "enum": [ "Ingress", "Egress" ]
             }
         },
         "ingress_egress": { 
@@ -43,7 +43,7 @@
             "items": {
                 "type": "object",
                 "properties": {
-                    "action": { "type": "string", "enum": [ "allow", "deny", "log" ] },
+                    "action": { "type": "string", "enum": [ "Allow", "Deny", "Log" ] },
                     "protocol": { "type": "string", "enum": [ "TCP", "UDP" ] },
                     "source": { "$ref": "#/definitions/source_destination" },
                     "destination": { "$ref": "#/definitions/source_destination" }
