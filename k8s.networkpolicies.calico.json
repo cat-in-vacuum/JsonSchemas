@@ -8,7 +8,7 @@
         "apiVersion": {
             "description": "apiVersion: projectcalico.org/v3",
             "type": "string",
-            "enum": [ "projectcalico.org/v3" ]
+            "enum": [ "projectcalico.org/v3", "crd.projectcalico.org/v1" ]
         },
         "kind": {
             "type": "string",
